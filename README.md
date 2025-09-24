@@ -1,69 +1,95 @@
-# React + TypeScript + Vite
+# Contador de Calorías - React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web para el seguimiento de calorías consumidas y quemadas, desarrollada con React, TypeScript y Vite.
 
-Currently, two official plugins are available:
+## Descripción del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El Contador de Calorías es una aplicación que permite a los usuarios:
 
-## Expanding the ESLint configuration
+- Registrar alimentos consumidos y sus calorías
+- Registrar actividades físicas y calorías quemadas
+- Visualizar un resumen de calorías consumidas, quemadas y balance total
+- Editar y eliminar registros existentes
+- Almacenar la información localmente para persistencia de datos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+La aplicación está construida con un enfoque en componentes reutilizables y tipado fuerte gracias a TypeScript.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tecnologías Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- React 19
+- TypeScript
+- Vite
+- TailwindCSS
+- Heroicons
+- LocalStorage para persistencia de datos
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Instalación y Ejecución
+
+Para ejecutar este proyecto localmente, sigue estos pasos:
+
+1. Clona este repositorio:
+
+```bash
+git clone https://github.com/Mattyy000/Calorie-Tracker
+cd 03-CalorieTracker
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Instala las dependencias:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+3. Inicia el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+4. Abre tu navegador en `http://localhost:5173`
+
+## Compilación para Producción
+
+Para compilar el proyecto para producción:
+
+```bash
+npm run build
+```
+
+Los archivos compilados estarán disponibles en la carpeta `dist`.
+
+## Capturas de Pantalla
+
+### Pantalla Principal
+
+![Pantalla Principal](https://imgur.com/E1fVqE6)
+
+### Formulario de Registro
+
+![Formulario para llenar](https://imgur.com/n1nigfP)
+
+### Resumen de Calorías
+
+![Resumen de Calorías](https://imgur.com/WhOpLI1)
+
+## Características
+
+- Interfaz intuitiva y responsive
+- Cálculo automático de balance calórico
+- Categorización de entradas (comida/actividad)
+- Persistencia de datos mediante LocalStorage
+- Validación de formularios
+
+## Contribuir
+
+Si deseas contribuir a este proyecto, por favor:
+
+1. Haz un fork del repositorio
+2. Crea una rama para tu característica (`git checkout -b feature/nueva-caracteristica`)
+3. Haz commit de tus cambios (`git commit -m 'Añadir nueva característica'`)
+4. Haz push a la rama (`git push origin feature/nueva-caracteristica`)
+5. Abre un Pull Request
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
