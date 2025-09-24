@@ -12,7 +12,6 @@ El Contador de Calorías es una aplicación que permite a los usuarios:
 - Editar y eliminar registros existentes
 - Almacenar la información localmente para persistencia de datos
 
-La aplicación está construida con un enfoque en componentes reutilizables y tipado fuerte gracias a TypeScript.
 Es un proyecto utilizado para aprender React, TypeScript y Vite.
 
 ## Tecnologías Utilizadas
