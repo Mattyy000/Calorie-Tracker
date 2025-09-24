@@ -62,15 +62,15 @@ Los archivos compilados estarán disponibles en la carpeta `dist`.
 
 ### Pantalla Principal
 
-![Pantalla Principal](https://imgur.com/E1fVqE6)
+![Pantalla Principal](https://i.imgur.com/E1fVqE6.png)
 
 ### Formulario de Registro
 
-![Formulario para llenar](https://imgur.com/n1nigfP)
+![Formulario para llenar](https://i.imgur.com/n1nigfP.png)
 
 ### Resumen de Calorías
 
-![Resumen de Calorías](https://imgur.com/WhOpLI1)
+![Resumen de Calorías](https://i.imgur.com/WhOpLI1.png)
 
 ## Características
 
@@ -79,17 +79,3 @@ Los archivos compilados estarán disponibles en la carpeta `dist`.
 - Categorización de entradas (comida/actividad)
 - Persistencia de datos mediante LocalStorage
 - Validación de formularios
-
-## Contribuir
-
-Si deseas contribuir a este proyecto, por favor:
-
-1. Haz un fork del repositorio
-2. Crea una rama para tu característica (`git checkout -b feature/nueva-caracteristica`)
-3. Haz commit de tus cambios (`git commit -m 'Añadir nueva característica'`)
-4. Haz push a la rama (`git push origin feature/nueva-caracteristica`)
-5. Abre un Pull Request
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
